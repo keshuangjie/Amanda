@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footerLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip"
+    android:background="@drawable/widget_bar_bg_d"
+    android:orientation="horizontal" >
+    
+    <ImageButton
+        android:id="@+id/footer_face"
+        android:layout_width="0dip"
+        android:layout_weight="1.0"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:button="@null"
+        android:src="@drawable/widget_footer_button_face"
+        android:background="@drawable/widget_bar_radio_bg"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/widget_bar_cut_off"/>
+    <RadioButton
+        android:id="@+id/footer_photo"
+        android:layout_width="0dip"
+        android:layout_weight="1.0"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:button="@null"
+        android:drawableTop="@drawable/widget_footer_button_photo"
+        android:background="@drawable/widget_bar_radio_bg"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/widget_bar_cut_off"/>
+    <RadioButton
+        android:id="@+id/footer_atme"
+        android:layout_width="0dip"
+        android:layout_weight="1.0"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:button="@null"
+        android:drawableTop="@drawable/widget_footer_button_atme"
+        android:background="@drawable/widget_bar_radio_bg"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/widget_bar_cut_off"/>
+    <RadioButton
+        android:id="@+id/footer_j"
+        android:layout_width="0dip"
+        android:layout_weight="1.0"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:button="@null"
+        android:drawableTop="@drawable/widget_footer_button_soft"
+        android:background="@drawable/widget_bar_radio_bg"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/widget_bar_cut_off"/>
+ 
+
+</LinearLayout>

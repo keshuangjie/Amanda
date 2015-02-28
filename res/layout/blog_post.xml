@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+<!--     <include layout="@layout/main_head" /> -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <TextView 
+                android:id="@+id/tv_blog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标题："
+                style="@style/post_blog_text_notice"/>
+
+            <EditText
+                android:id="@+id/et_blog_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                style="@style/post_blog_text"/>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="2dip"
+                android:padding="5dip"
+                android:src="@drawable/widget_listview_divider_line"/>
+            
+            <TextView 
+                android:id="@+id/tv_blog_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/post_blog_text_notice"
+                android:text="正文："/>
+
+            <EditText
+                android:id="@+id/et_blog_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/post_blog_text"/>
+            
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/mood_post_footer" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="220dip"
+        android:columnWidth="50dip"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:scrollingCache="false"
+        android:stretchMode="columnWidth"
+        android:visibility="gone" />
+
+</LinearLayout>

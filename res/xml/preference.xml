@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<!--     <PreferenceCategory  -->
+<!-- 	    android:layout="@layout/preference_category"  -->
+<!-- 	    android:title="账号管理"> -->
+	       <com.sinaapp.whutec.amanda.widget.AccountPreference
+	           android:key="account"/>
+<!--     </PreferenceCategory> -->
+    <PreferenceCategory 
+	    android:layout="@layout/preference_category" 
+	    android:title="功能设置">
+		<CheckBoxPreference 
+		    android:layout="@layout/preference" 
+		    android:title="左右滑动" 
+	        android:key="scroll" 
+	        android:summaryOn="已打开左右滑动"
+	        android:summaryOff="已关闭左右滑动" 
+		    android:defaultValue="true"/>
+		<CheckBoxPreference 
+		    android:layout="@layout/preference" 
+		    android:title="提示声音" 
+	        android:key="voice" 
+	        android:summaryOn="已开启提示声音" 
+	        android:summaryOff="已关闭提示声音"
+		    android:defaultValue="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory 
+	    android:layout="@layout/preference_category" 
+	    android:title="隐私设置">
+		<CheckBoxPreference 
+		    android:layout="@layout/preference" 
+		    android:title="是否启动密码" 
+	        android:key="isPasswrod" 
+	        android:summaryOn="已开启密码设置" 
+	        android:summaryOff="已关闭密码设置"
+		    android:defaultValue="false"/>
+	    <Preference 
+	        android:layout="@layout/preference" 
+	        android:title="设置启动密码" 
+	        android:key="password" 
+	        android:summary="未设置密码"
+	        android:enabled="false"/>
+	    <CheckBoxPreference 
+		    android:layout="@layout/preference" 
+		    android:title="启动备份" 
+	        android:key="backup" 
+	        android:summaryOn="已开启定期备份" 
+	        android:summaryOff="已关闭定期备份"
+		    android:defaultValue="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory 
+	    android:layout="@layout/preference_category" 
+	    android:title="其他">
+        <Preference 
+	        android:layout="@layout/preference" 
+	        android:title="意见反馈" 
+	        android:key="feedback" 
+	        android:summary="用户意见反馈"/>
+        <Preference 
+	        android:layout="@layout/preference" 
+	        android:title="新版本检测" 
+	        android:key="update" 
+	        android:summary="检测是否有新版本"/>
+        <Preference 
+	        android:layout="@layout/preference" 
+	        android:title="关于我们" 
+	        android:key="about" 
+	        android:summary="关于我们、版权信息"/>
+    </PreferenceCategory>
+</PreferenceScreen>

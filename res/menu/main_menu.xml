@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+     <item android:id="@+id/writeMood"
+        android:title="@string/mood_write"
+        android:showAsAction="always"/>
+      <item android:id="@+id/writeBlog"
+        android:title="@string/blog_write"
+        android:showAsAction="always"/>
+    <item android:id="@+id/importt"
+        android:title="@string/importt"/>
+    <item android:id="@+id/export"
+        android:title="@string/export"/>
+    <item android:id="@+id/setting"
+        android:title="@string/setting"/>
+    <item android:id="@+id/exit"
+        android:title="@string/exit"/>
+    
+</menu>

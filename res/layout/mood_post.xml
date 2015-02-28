@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+<!--     <include layout="@layout/main_head"/> -->
+    
+    <FrameLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+        
+        <EditText
+            android:id="@+id/mood_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="top"
+            android:padding="5dip"
+            android:background="@null"
+            android:hint="@string/mood_content_hint"
+           />
+        
+        <LinearLayout 
+            android:id="@+id/clear_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:gravity="center"
+            android:layout_marginBottom="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/widget_bar_clear_word"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:id="@+id/input_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="6dip"
+                android:text="200"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clearwords_icon"/>
+            
+        </LinearLayout>
+        
+    </FrameLayout>
+    
+    <include layout="@layout/mood_post_footer"/>
+    
+    <GridView 
+        android:id="@+id/gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="220dip"
+        android:numColumns="auto_fit"
+        android:columnWidth="50dip"
+        android:stretchMode="columnWidth"
+        android:scrollingCache="false"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

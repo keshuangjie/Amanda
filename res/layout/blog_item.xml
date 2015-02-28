@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+    
+<!--     <ImageView -->
+<!--         android:id="@+id/image_face" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:paddingTop="2dip" -->
+<!--         android:paddingRight="5dip" -->
+<!--         android:src="@drawable/widget_dface"/> -->
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip">
+        
+        <TextView 
+            android:id="@+id/blog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            style="@style/mood_name"
+            android:text="无名"/>
+        
+        <TextView 
+            android:id="@+id/blog_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/mood_content"
+            android:text="不知不觉19:38了，与往常一样，办公室里没有任何下班的迹象"/>
+        
+        <TextView 
+            android:id="@+id/blog_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            style="@style/mood_date"
+            android:text="发表于2012-10-17 19:39"/>
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

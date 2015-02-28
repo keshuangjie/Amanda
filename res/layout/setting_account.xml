@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip">
+
+        <ImageView
+            android:id="@+id/user_face"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:src="@drawable/widget_dface_border_d"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/user_face" 
+            android:layout_alignTop="@id/user_face"
+            android:paddingLeft="14dip"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Jimmy"/>
+
+        <Button
+            android:id="@+id/user_face_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_toRightOf="@id/user_face"
+            android:layout_alignBottom="@id/user_face"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="修改头像" />
+        
+        <Button
+            android:id="@+id/user_name_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_alignTop="@id/user_face_edit"
+            android:layout_toRightOf="@id/user_face_edit"
+            android:text="修改名字" />
+    </RelativeLayout>
+        
+</LinearLayout>

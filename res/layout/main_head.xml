@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dip"
+    android:orientation="horizontal" 
+    android:background="@drawable/widget_head_bg">
+    
+    <ImageView
+        android:id="@+id/head_back"
+        android:background="@drawable/widget_header_icon_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:visibility="gone"
+        />
+    
+    <TextView 
+        android:id="@+id/head_title"
+        style="@style/detail_head_title"
+        android:text="@string/mood_title"/>
+    
+    <ImageView
+        android:id="@+id/head_right_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dip"
+        android:background="@drawable/widget_header_write_mood"
+        android:visibility="gone"/>
+    
+    <ImageView
+        android:id="@+id/head_right_write_blog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dip"
+        android:background="@drawable/widget_header_write_blog"
+        android:visibility="gone"/>
+    
+    <Button
+        android:id="@+id/head_publish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/widget_header_button_bg"
+        android:visibility="gone"
+        android:text="@string/publish"/>
+    
+    
+</LinearLayout>

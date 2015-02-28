@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footerLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip"
+    android:background="@drawable/widget_bar_bg_d"
+    android:orientation="horizontal" >
+    
+    <RadioButton
+        android:id="@+id/radio_mood"
+        android:layout_width="0dip"
+        android:layout_weight="1.0"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:button="@null"
+        android:drawableTop="@drawable/widget_bar_radio_mood"
+        android:background="@drawable/widget_bar_radio_bg"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/widget_bar_cut_off"/>
+    <RadioButton
+        android:id="@+id/radio_blog"
+        android:layout_width="0dip"
+        android:layout_weight="1.0"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:button="@null"
+        android:drawableTop="@drawable/widget_bar_radio_blog"
+        android:background="@drawable/widget_bar_radio_bg"/>
+<!--     <ImageView -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:src="@drawable/widget_bar_cut_off"/> -->
+<!--     <ImageView -->
+<!--         android:id="@+id/more" -->
+<!--         android:layout_width="0dip" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_weight="1.0"  -->
+<!--         android:clickable="true" -->
+<!--         android:background="@drawable/widget_bar_radio_bg" -->
+<!--         android:src="@drawable/widget_bar_image_more"/> -->
+
+</LinearLayout>

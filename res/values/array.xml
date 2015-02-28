@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="header_title">
+        <item>心情</item>
+        <item>日志</item>
+    </string-array>
+    
+    <string-array name="photo_select">
+        <item>从相册中选择</item>
+        <item>打开照相机</item>
+    </string-array>
+    
+</resources>
