@@ -15,7 +15,7 @@ import com.sinaapp.whutec.amanda.util.BitmapUtil;
 import com.sinaapp.whutec.amanda.util.FileUtil;
 
 /**
- * Ӧ�ó��������ࣺ���ڱ����û������Ϣ������
+ * app配置类
  * @author keshuangjie
  */
 public class Configuration {
@@ -24,10 +24,10 @@ public class Configuration {
 	private static final String CONFIG_FILE = "config.properties";
 	private static final String IMAGE_FILE = "image";
 	private static final String IMAGE_USER_FACE = "user_face.png";
-	public static final String TEMP_MOOD = "temp_mood";//δ����������
+	public static final String TEMP_MOOD = "temp_mood";
 	public static final String TEMP_BLOG_TITLE = "temp_blog_title";
 	public static final String TEMP_BLOG_CONTENT = "temp_blog_content";
-	public static final String IMPORT_FILE = "privateBlog";//�����ļ�Ŀ¼
+	public static final String IMPORT_FILE = "privateBlog";
 	public static final String APPLICATION_NAME = "privateBlog";
 	
 //	public static boolean isPassword;
@@ -55,7 +55,7 @@ public class Configuration {
     }
     
     /**
-     * �Ƿ���������
+     * 密码是否为空
      * @return
      */
     public boolean isPasswordNull(){
@@ -67,7 +67,7 @@ public class Configuration {
     }
     
     /**
-     * �Ƿ�������������
+     * 是否设置了密码
      * @return
      */
     public boolean isPassword(){
@@ -81,7 +81,7 @@ public class Configuration {
     }
     
     /**
-     * ��ȡ�û�����û���á�����������
+     * 获取用户名
      * @return
      */
     public String getUserName(){
@@ -96,7 +96,7 @@ public class Configuration {
     }
     
     /**
-     * ��ȡ�û�ͼ��û����Ĭ��
+     * 获取头像bitmap
      * @return
      */
     public Bitmap getUserFaceImage(){
@@ -115,7 +115,7 @@ public class Configuration {
     }
     
     /**
-     * �����û�ͷ��
+     * 保存头像
      * @param bitmap
      */
     public void saveUserFaceImage(Bitmap bitmap){

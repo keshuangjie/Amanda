@@ -12,7 +12,7 @@ public class MyApplication extends Application {
 		System.out.println("AppContext:onCreate()");
 		Configuration.initConfig(getApplicationContext());
 		
-		AVOSCloud.initialize(this, "6nmy5gka0kabauzab7gnsxndiyywpeqw4i8t49uev29dojwr", "cdwz7cvo58cn6ey955xp71kmmz1490ofolor51uk01s2d29d");
+		AVOSCloud.initialize(this, AVOSign.APPLICATION_ID, AVOSign.CLIENT_KEY);
 	}
 	
 }
