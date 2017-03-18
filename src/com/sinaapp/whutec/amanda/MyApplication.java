@@ -9,7 +9,6 @@ public class MyApplication extends Application {
 	@Override
 	public void onCreate() {
 		super.onCreate();
-		System.out.println("AppContext:onCreate()");
 		Configuration.initConfig(getApplicationContext());
 		
 		AVOSCloud.initialize(this, AVOSign.APPLICATION_ID, AVOSign.CLIENT_KEY);
